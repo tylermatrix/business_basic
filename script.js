@@ -1,4 +1,4 @@
-// navbar
+// Navbar
 const menu = document.querySelector(".menu");
 const navbar = document.querySelector(".navbar");
 
@@ -6,7 +6,7 @@ menu.addEventListener("click", () => {
   navbar.classList.toggle("change");
   menu.classList.toggle("change");
 });
-// End of navbar
+// End of Navbar
 
 // Section 2 Video
 const video = document.querySelector(".video");
@@ -39,3 +39,17 @@ video.addEventListener("timeupdate", () => {
   }
 });
 // End of Section 2 Video
+
+var swiper = new Swiper(".swiper-container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 70,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+});
